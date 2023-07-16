@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.shadow-pricing {
+  --tw-shadow: 0px 7px 35px rgba(180, 189, 223, 0.4);
+  --tw-shadow-colored: 0px 7px 35px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}

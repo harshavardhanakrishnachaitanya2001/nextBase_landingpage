@@ -11,7 +11,10 @@ const ProjectSection = () => {
               <span className="text-blue-500 text-lg md:text-base font-semibold mb-2 block">
                 Know About Our Project
               </span>
-              <h1 className="text-3xl sm:text-4xl mb-5 md:text-[45px] font-bold"> About Our Software</h1>
+              <h1 className="text-3xl sm:text-4xl mb-5 md:text-[45px] font-bold">
+                {" "}
+                About Our Software
+              </h1>
               <p className="text-center text-base w-fit md:text-lg leading-relaxed mx-auto text-gray-400">
                 There are many variations of passages of Lorem Ipsum available
                 but the majority have suffered alteration in some form.
@@ -178,7 +181,13 @@ const ProjectSection = () => {
               <Image src="/about-image.png" alt="" width={500} height={500} />
             </div> */}
             <div className="mx-auto ">
-                <Image src="/about-image.png" width={800} className="max-w-full mx-auto" height={600} alt="About Image" />
+              <Image
+                src="/about-image.png"
+                width={800}
+                className="max-w-full mx-auto"
+                height={600}
+                alt="About Image"
+              />
             </div>
           </div>
         </div>

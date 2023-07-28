@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import HeroSection from "./HeroSection";
-import ProjectSection from "./ProjectSection";
+import AboutProjects from "./AboutProjectSection";
 import FeaturesSection from "./FeaturesSection";
 import TestimonialsSection from "./TestimonialsSection";
 import PricingSection from "./PricingSection";
@@ -32,7 +32,7 @@ const Body = () => {
   return (
     <>
       <HeroSection />
-      <ProjectSection />
+      <AboutProjects />
       <FeaturesSection />
       <TestimonialsSection />
       <PricingSection />

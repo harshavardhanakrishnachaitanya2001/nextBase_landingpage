@@ -1,9 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
 
-const ProjectSection = () => {
+const AboutProjectSection = () => {
   return (
-    <section className="pt-[100px] max-w-full">
+    <section id="about" className="pt-[100px] max-w-full">
       <div className="px-4 mx-auto w-full container">
         <div className="flex flex-wrap">
           <div className="w-full px-4">
@@ -196,4 +196,4 @@ const ProjectSection = () => {
   );
 };
 
-export default ProjectSection;
+export default AboutProjectSection;

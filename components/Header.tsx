@@ -3,22 +3,33 @@ import Link from "next/link";
 import {useState, useEffect,} from "react"
 
 function Header() {
-  const [scrollPos, setScrollPos] = useState(0)
+  
+  const [scrolled, setScrolled] = useState(false);
+
+  const checkScroll = () => {
+    const offset = window.scrollY;
+    if (offset > 10 ) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  }
+
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', checkScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  },[])
-  const handleScroll = () => {
-    const currentScrollPos = window.pageYOffset;
-    setScrollPos(currentScrollPos);
-  };
+      window.removeEventListener('scroll', checkScroll);
+    }
+  }, [])
 
-  const opacity = Math.min(100 / scrollPos, 1);
+  let headerClass = "fixed bg-transparent top-0 left-0 z-40 w-full flex justify-center items-center transition"
+  if (scrolled) {
+    headerClass = "fixed border-b top-0 left-0 z-50 w-full flex justify-center items-center transition bg-opacity-90 backdrop-blur-sm bg-[#FFFAFA]";
+  }
 
+  
   return (
-    <header className="fixed bg-transparent top-0 left-0 z-40 w-full flex justify-center items-center transition" style={{backgroundColor: `rgba(255, 255, 255, ${opacity})`}}>
+    <header className={headerClass}>
       <div className="container">
         <div className="flex mx-[-16px] items-center justify-between relative">
           <div className="px-4 w-60 max-w-full">
@@ -41,52 +52,52 @@ function Header() {
                 className="absolute py-5 lg:py-0 lg:px-4 xl:px-6 bg-white lg:bg-transparent shadow-lg rounded-lg max-w-[250px] w-full lg:max-w-full lg:w-full right-4 top-full hidden lg:block lg:static lg:shadow-none"
               >
                 <ul className="blcok lg:flex">
-                  {/* Replaced these <Link> tags with next/link's <Link> component for better navigation experience */}
-                  <li className="relative group">
+                  
+                  <li className="relative ">
                     <Link href="/" className="hover:text-blue-500">
-                      <span className="menu-scroll text-base text-black group-hover:text-primary py-2 lg:py-6 lg:inline-flex lg:px-0 flex mx-8 lg:mr-0">
+                      <span className="text-base py-2 lg:py-6 lg:inline-flex lg:px-0 flex mx-8 lg:mr-0">
                         Features
                       </span>
                     </Link>
                   </li>
-                  <li className="relative group">
+                  <li className="relative ">
                     <Link href="/" className="hover:text-blue-500">
-                      <span className="menu-scroll text-base text-black group-hover:text-primary py-2 lg:py-6 lg:inline-flex lg:px-0 flex mx-8 lg:mr-0">
+                      <span className="text-base py-2 lg:py-6 lg:inline-flex lg:px-0 flex mx-8 lg:mr-0">
                         Demos
                       </span>
                     </Link>
                   </li>
-                  <li className="relative group">
+                  <li className="relative ">
                     <Link href="/" className="hover:text-blue-500">
-                      <span className="menu-scroll text-base text-black group-hover:text-primary py-2 lg:py-6 lg:inline-flex lg:px-0 flex mx-8 lg:mr-0">
+                      <span className="text-base py-2 lg:py-6 lg:inline-flex lg:px-0 flex mx-8 lg:mr-0">
                         Pricing
                       </span>
                     </Link>
                   </li>
-                  <li className="relative group">
+                  <li className="relative ">
                     <Link href="/" className="hover:text-blue-500">
-                      <span className="menu-scroll text-base text-black group-hover:text-primary py-2 lg:py-6 lg:inline-flex lg:px-0 flex mx-8 lg:mr-0">
+                      <span className="text-base py-2 lg:py-6 lg:inline-flex lg:px-0 flex mx-8 lg:mr-0">
                         Docs
                       </span>
                     </Link>
                   </li>
-                  <li className="relative group">
+                  <li className="relative ">
                     <Link href="/" className="hover:text-blue-500">
-                      <span className="menu-scroll text-base text-black group-hover:text-primary py-2 lg:py-6 lg:inline-flex lg:px-0 flex mx-8 lg:mr-0">
+                      <span className="text-base py-2 lg:py-6 lg:inline-flex lg:px-0 flex mx-8 lg:mr-0">
                         Discord
                       </span>
                     </Link>
                   </li>
-                  <li className="relative group">
+                  <li className="relative ">
                     <Link href="/" className="hover:text-blue-500">
-                      <span className="menu-scroll text-base text-black group-hover:text-primary py-2 lg:py-6 lg:inline-flex lg:px-0 flex mx-8 lg:mr-0">
+                      <span className="text-base py-2 lg:py-6 lg:inline-flex lg:px-0 flex mx-8 lg:mr-0">
                         Public Roadmap
                       </span>
                     </Link>
                   </li>
-                  <li className="relative group">
+                  <li className="relative ">
                     <Link href="/" className="hover:text-blue-500">
-                      <span className="menu-scroll text-base text-black group-hover:text-primary py-2 lg:py-6 lg:inline-flex lg:px-0 flex mx-8 lg:mr-0">
+                      <span className="text-base py-2 lg:py-6 lg:inline-flex lg:px-0 flex mx-8 lg:mr-0">
                         FAQ
                       </span>
                     </Link>
@@ -115,3 +126,5 @@ function Header() {
 }
 
 export default Header;
+
+

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const PricingSection = () => {
   return (
-    <section className="pt-[120px] pb-20">
+    <section id="pricing" className="pt-[120px] pb-20">
       <div className="container mx-auto">
         <div className="w-full px-4">
           <div className="mx-auto max-w-[655px] text-center mb-20">

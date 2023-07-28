@@ -2,7 +2,7 @@ import React from "react";
 
 const FeaturesSection = () => {
   return (
-    <section className="pt-[100px]">
+    <section id="features" className="pt-[100px]">
       <div className="container mx-auto">
         <div className="px-4 w-full">
           <div className="mx-auto max-w-[655px] text-center mb-20">

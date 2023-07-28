@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const NewsletterSection = () => {
   return (
-    <section>
+    <section id="newsletter">
       <div className="max-w-[1320px] w-full mx-auto px-4">
         <div className="bg-blue-500 overflow-hidden relative z-10 rounded-sm py-10 px-12 sm:px-8 lg:flex items-center justify-between">
           <div className="mb-6 lg:mb-0 md:max-w-[400px] w-full">

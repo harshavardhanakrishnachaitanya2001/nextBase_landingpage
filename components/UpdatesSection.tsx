@@ -5,7 +5,7 @@ import Image from "next/image";
 const UpdatesSection = () => {
   return (
     <section className="pt-[120px]">
-      <div className="px-4 container mx-auto">
+      <div className="px-4 max-w-[1320px] w-full mx-auto">
         <div className="flex flex-wrap mx-[-16px]">
           <div className="px-4 w-full">
             <div className="mx-auto max-w-[570px] text-center mb-[100px]">

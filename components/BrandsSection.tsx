@@ -5,7 +5,7 @@ import React from 'react'
 const BrandsSection = () => {
   return (
     <section>
-        <div className='container mx-auto'>
+        <div className='max-w-[1320px] w-full px-4 mx-auto'>
             <div className="flex flex-wrap mx-[-16px]">
                 <div className="px-4 w-full">
                     <div className='border-b border-t border-[#E9ECF8] flex flex-wrap items-center justify-center p-8 sm:px-10 md:py-[40px] md:px-[50px] xl:p-[50px] 2xl:px-[70px]'>

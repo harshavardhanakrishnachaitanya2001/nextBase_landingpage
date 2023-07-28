@@ -4,7 +4,7 @@ import Image from "next/image";
 const AboutProjectSection = () => {
   return (
     <section id="about" className="pt-[100px] max-w-full">
-      <div className="px-4 mx-auto w-full container">
+      <div className="px-4 mx-auto w-full max-w-[1320px]">
         <div className="flex flex-wrap">
           <div className="w-full px-4">
             <div className="mx-auto max-w-[655px] text-center mb-12">

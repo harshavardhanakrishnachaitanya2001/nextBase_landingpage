@@ -3,7 +3,7 @@ import React from "react";
 const FeaturesSection = () => {
   return (
     <section id="features" className="pt-[100px]">
-      <div className="container mx-auto">
+      <div className="max-w-[1320px] px-4 w-full mx-auto">
         <div className="px-4 w-full">
           <div className="mx-auto max-w-[655px] text-center mb-20">
             <span className="text-lg font-semibold text-blue-500 mb-2 block">

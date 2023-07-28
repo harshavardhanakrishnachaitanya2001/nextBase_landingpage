@@ -30,7 +30,7 @@ function Header() {
   
   return (
     <header className={headerClass}>
-      <div className="container">
+      <div className="max-w-[1320px] mx-auto w-full px-4">
         <div className="flex mx-[-16px] items-center justify-between relative">
           <div className="px-4 w-60 max-w-full">
             <Link href="/">

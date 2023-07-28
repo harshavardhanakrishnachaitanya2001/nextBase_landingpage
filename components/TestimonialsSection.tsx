@@ -3,7 +3,7 @@ import Image from "next/image";
 const TestimonialsSection = () => {
   return (
     <section id="testimonial" className="pt-[120px] pb-20">
-      <div className="container mx-auto">
+      <div className="max-w-[1320px] w-full px-4 mx-auto">
         <div className="px-4 w-full">
           <div className="mx-auto max-w-[655px] text-center mb-20">
             <span className="text-lg font-semibold text-blue-500 block">

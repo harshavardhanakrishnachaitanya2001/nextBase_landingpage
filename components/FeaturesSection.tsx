@@ -7,7 +7,7 @@ const FeaturesSection = () => {
         <div className="px-4 w-full">
           <div className="mx-auto max-w-[655px] text-center mb-20">
             <span className="text-lg font-semibold text-blue-500 mb-2 block">
-              Our Software's Core Features
+              Our Software&apos;s Core Features
             </span>
             <h2 className="font-bold text-3xl sm:text-4xl md:text-[45px] mb-5">
               SaaS Features

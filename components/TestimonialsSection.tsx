@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const TestimonialsSection = () => {
   return (
-    <section id = "testimonial" className="pt-[120px] pb-20">
+    <section id="testimonial" className="pt-[120px] pb-20">
       <div className="container mx-auto">
         <div className="px-4 w-full">
           <div className="mx-auto max-w-[655px] text-center mb-20">
@@ -90,7 +90,7 @@ const TestimonialsSection = () => {
                       </span>
                     </div>
                     <p className="mt-2 text-sm font-medium text-gray-400">
-                      Client's Review
+                      Client&apos;s Review
                     </p>
                   </div>
                 </div>
@@ -173,7 +173,7 @@ const TestimonialsSection = () => {
                       </span>
                     </div>
                     <p className="mt-2 text-sm font-medium text-gray-400">
-                      Client's Review
+                      Client&apos;s Review
                     </p>
                   </div>
                 </div>
@@ -256,7 +256,7 @@ const TestimonialsSection = () => {
                       </span>
                     </div>
                     <p className="mt-2 text-sm font-medium text-gray-400">
-                      Client's Review
+                      Client&apos;s Review
                     </p>
                   </div>
                 </div>
@@ -339,7 +339,7 @@ const TestimonialsSection = () => {
                       </span>
                     </div>
                     <p className="mt-2 text-sm font-medium text-gray-400">
-                      Client's Review
+                      Client&apos;s Review
                     </p>
                   </div>
                 </div>

@@ -35,7 +35,7 @@ const Footer = () => {
                   href=""
                   className="text-base text-gray-400 hover:text-blue-500 font-medium mr-8"
                 >
-                  FAQ's
+                  FAQ&apos;s
                 </Link>
                 <Link
                   href=""
